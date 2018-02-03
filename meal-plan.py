@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import pandas as pd
 import argparse
 import logging as log
@@ -45,4 +46,4 @@ if __name__ == "__main__":
                         )
     args = parser.parse_args()
     meal_database = MealDatabase(database=args.database)
-    meal_database.printPlan()
+    meal_database.printPlan(num_meals=args.num_meals)
